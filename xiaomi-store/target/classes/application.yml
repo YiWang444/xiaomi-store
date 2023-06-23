@@ -1,0 +1,28 @@
+server:
+  port: 18888
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/storeDB?characterEncoding=UTF8&useSSL=false
+    username: root
+    password: 1234
+  redis:
+    host: localhost
+    port: 6379
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+#配置日志  log-impl:日志实现
+mybatis-plus:
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#mybatis:
+#  configuration:
+#    mapUnderscoreToCamelCase: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  level:
+    com.example.mapper: DEBUG #指定 mapper 包的日志级别为 debug
