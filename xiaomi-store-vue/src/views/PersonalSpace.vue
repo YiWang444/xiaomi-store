@@ -400,10 +400,10 @@
         this.getUserInfo();
 
         this.OSSClient = new OSS({
-            region: 'oss-cn-beijing',
-            accessKeyId: 'LTAI5tSRKT3N7cV8tDhCP3MF',
-            accessKeySecret: 'l50Ksr6ySHKox4bTDJPOmKxngjervj',
-            bucket: 'web-framework023',
+            region: '',
+            accessKeyId: '',
+            accessKeySecret: '',
+            bucket: '',
             secure: true // 为 true 时使用 HTTPS 协议，更加安全
         });
     }
